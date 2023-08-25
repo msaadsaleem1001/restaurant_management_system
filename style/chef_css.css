@@ -1,0 +1,74 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.logout{
+    color:white; 
+    text-decoration: none; 
+    cursor: pointer;
+    float: right;
+    padding-right: 1%; 
+    padding-top: 15px;
+}
+.logout:hover{
+    color: #f8be3f;
+}
+#chef_page{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#chef_page h3{
+    width: 100%;
+    height: 20px;
+    background-color: dimgrey;
+    color: white;
+}
+.binking_text{
+    width: 100%;
+    height: 20px;
+    color: white;
+    position:relative;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: white;    }
+}
+.mobile-container{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+footer{
+    height: 50px;
+    color: white;
+    padding-left: 80px;
+    background-image: linear-gradient(to right, #000000, #616161);
+    border-top-left-radius: 140px;
+}
+#top_button {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 116, 35, 0.849);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #top_button:hover {
+    background-color:rgba(0, 0, 0, 0.281);
+    color:white;
+  }

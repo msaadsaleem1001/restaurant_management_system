@@ -1,0 +1,1024 @@
+/* universal selector */
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}/*end */
+
+
+/* body styling of every page */
+body{
+    background-color: white;
+    margin: 0, 0, 0, 0;
+    padding-bottom: 0px;
+}
+/* end */
+
+
+/* styling the slider that shows at almost all pages with different content */
+img{
+    width: 100%;
+    height: 500px;
+}
+.slide-container{
+   position: relative;
+   width: 100%;
+}
+.slide img{
+    width: 100%;
+}
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    top: 41%;
+    font-style: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 15px;
+    margin: 8px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+.right{
+    right: 8px;
+}
+.left{
+    left: 8px;
+}
+.caption{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 5px;
+    color: white;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+.slide{
+    display: none;
+}
+/* end of slider style. */
+
+
+
+
+/* Navigation bar at top for navigate in menu */
+.mobile-container{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+.logo{
+    width: 20%;
+    height: 50px;
+    margin: 8px 8px;
+}
+.topnav{
+    overflow: hidden;
+    position: relative;
+}
+#myLinks{
+    display: none;
+    width: 100%;
+  }
+.topnav a{
+    color: white;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+.topnav a.icon{
+    background:rgba(255, 116, 35, 0.849);
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 30px;
+    width: 60px;
+    height:60px;
+  }
+.topnav a:hover{
+     background: #ddd;
+     color: rgba(0, 0, 0, 0.644);
+}
+/* end of navigation bar */
+
+
+
+
+
+
+
+/* style of decide the interface at home page conatiner  */
+.decide_cart{
+    width: 100%;
+    background-color: white;
+    position:relative;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding-top: 50px;
+    animation:blinkingText 1.2s infinite;
+}
+.decide{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    position:relative;
+    text-align: center;
+    font-weight: bold;
+    font-family:fantasy;
+    font-size: 25px;
+    padding-top: 50px;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+.container1{
+    padding-top: 100px;
+    width: 100%;
+    height: 400px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 100px;  
+}
+.emp .customer{
+    position: absolute;
+}
+.emp img{
+    width: 150px;
+    height: 150px;
+}
+.customer img{
+    width: 150px;
+    height: 150px;
+}
+.custbtn, .empbtn{
+    position: absolute;
+    width: 150px;
+    margin: 170px -150px;
+    height: 40px;
+    cursor: pointer;
+    background-color:  rgba(255, 116, 35, 0.849);
+    border-radius: 10px;
+    border: 0px;
+    font-family:fantasy;
+    font-size: 15px;
+}
+.custbtn:hover, .empbtn:hover{
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+}
+/* end of interface container at home.php */
+
+
+
+
+/* style for footer witch is added at almost all pages at the end */
+footer{
+    width: 100%;
+    color: #ddd;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #000000, #616161);
+    border-top-left-radius: 140px;
+    padding: 50px 50px 50px;
+    line-height: 20px;
+    font-size: 13px;
+}
+.col a{
+    text-decoration: none;
+    color: white;
+} 
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis:20%;
+    padding: 10px;
+}
+.col h2{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+form{
+    align-items: center;
+    display:inline;
+    padding-bottom: 15px;
+    justify-content:space-between;
+    margin-bottom: 40px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: none;
+    color:white;
+    border-bottom: 1px solid white;
+}
+form textarea{
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: none;
+    color:white;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form .fa{
+    font-size: 18px;
+    color: white;
+}
+.horizontal-Line{
+    width: 100%;
+    font-size: 2px;
+}
+/* end of footer style */
+
+
+
+
+
+
+/* style for the sticky button by through we can navigate from bottom or ceter to the top  */
+#top_button {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 116, 35, 0.849);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #top_button:hover {
+    background-color:rgba(0, 0, 0, 0.281);
+    color:white;
+  }
+  /* end of top navigation button */
+
+
+
+
+
+
+  /* style for the contact_us.php page and specific for container of form and image */
+  .container_contact{
+    width: 100%;
+    text-align: center;
+  }
+  .content1 img{
+    width: 50%;
+    height: 500px;
+  }
+  .content2{
+    margin: auto;
+    width: 50%;
+    height: 500px;
+  }
+  input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    resize: vertical;
+  }
+  #subject{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    resize: vertical;
+  }
+  #email{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    resize: vertical;
+}
+  .content2 button{
+    width: 100%;
+    background-color: rgba(255, 116, 35, 0.849);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .content2 button:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+}
+/* end of contact container form  */
+
+
+
+
+
+
+/* added style for the about page content that displays in rows and columns */
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: grey;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  /* end of style in about page */
+
+
+
+
+
+
+  /* style for the container of privacy.php content in paragraphs */
+  .privacy{
+      padding: 50px 50px 50px 50px;
+      text-align:left;
+      line-height: 25px;
+      font-style:normal;
+      color: black;
+  }
+  .privacy h2{
+    font-family:fantasy;
+    text-align: center;
+  }
+/* end of privacy style */
+
+
+
+
+
+
+
+  /* style for the content of emp_dec.php buttons. */
+  /* When the user clicks the employe interface and CSS for group buttons */
+  .btn-group-text{
+      padding-top:50px;
+      padding-bottom: 50px;
+      font-family: fantasy;
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      animation:blinkingText 1.2s infinite;
+  }
+  .btn_group_button{
+      background-color:rgba(255, 116, 35, 0.849);
+      margin: 0 auto;
+      color: white; 
+      padding: 10px 24px;
+      font-size: 20px;
+      width: 50%;
+      cursor: pointer; 
+      border: 1px solid orange;
+      border-radius: 10px;
+      display: block; 
+      /* Make the buttons appear below each other */
+  }
+  #btn-group{
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .btn_group_button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+/* Add a background color on hover */
+.btn_group_button:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+  }
+  /* end */
+
+
+
+
+
+
+
+/* style for alerts that shows by putting data in forms  */
+  .alertS {
+    width: 100%;
+    padding: 12px;
+    background-color: #9dfc99;
+    color: rgb(51, 49, 49);
+    border-radius: 10px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .alertE {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    background-color: #ff8d85;
+    color: rgb(51, 49, 49);
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .closebtn:hover {
+    color: black;
+  }
+/* end of alerts */
+
+
+
+
+
+
+/* Css for Admin Panel  */
+/*Header*/
+#top-nav-bar
+{
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
+	font-size: 1em;
+	position: fixed;
+	width: 100%;
+	z-index: 111;
+	background-color: #f6f6f6;
+}
+#sticky-left-controls:hover{
+	background-color: #35353b;
+  cursor: pointer;
+}
+#sticky-left-controls
+{
+	width: 250px;
+	float: left;
+	background-color: #f8be3f;
+}
+
+#sticky-left-controls div
+{
+	display: inline-block;
+	padding: 1em;
+	color: white;
+	font-weight: bold;
+}
+/*Left Navigation bar*/
+#left-nav-bar
+{
+  width: 250px;
+	position: fixed;
+	top: 3.6em;
+	left: 0;
+	bottom: 0;
+	color: #5f5f5f;
+	font-size: 14px;
+  overflow-x: hidden;
+	display: block;
+	transition: 1s;
+	overflow: auto;
+}
+.content-bar
+{
+	position: absolute;
+	top: 3.9em;
+	left: 260px;
+	transition: 1s;
+  width: 80%;
+}
+.content-bar.active
+{
+	left: 0;
+  width: 100%;
+}
+#left-nav-bar.active
+{
+	left: -50%;
+}
+::-webkit-scrollbar {
+	background-color: black;
+	width: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #35353b;
+	border: solid 1px black;
+}
+/*Person info*/
+#person-info
+{
+	background-color: #35353b;
+}
+
+#person-image
+{
+	padding: 1em 0 0 1em;
+	overflow: hidden;
+}
+
+#person-name h6:hover
+{
+	color: #f8be3f;
+}
+#person-photo
+{
+	float: left;
+}
+#person-photo img
+{
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+	border-radius: 50%;
+}
+#person-name
+{
+  position: absolute;
+	right: 20px;
+	width: calc(100% - 50px);
+	text-align: right;
+	padding: 1em;
+}
+
+#person-name h6
+{
+	color: #5f5f5f;
+	display: inline-block;
+	padding: 0;
+  /* margin: auto; */
+}
+/*Extra settings*/
+#extra-settings
+{
+  margin-top: 50px;
+	clear: both;
+	padding: 20px;
+	text-align: center;
+}
+
+#extra-settings a
+{
+	padding: 1em;
+	text-decoration: none;
+	color: #5f5f5f;
+	display: inline-block;
+}
+
+#extra-settings a:hover
+{
+	color:#f8be3f;;
+	cursor: pointer;
+}
+/*List of different items*/
+#list-all
+{
+	background-color: #2c2c31;
+}
+
+#list-all .dropdown-list
+{
+  position: absolute;
+  left: 0px;
+  font-size: 15px;
+	padding: 15px;
+  width: 100%;
+}
+
+#list-all h6
+{
+	border: 1px solid #27272b;
+	padding: 20px;
+}
+#list-all ul
+{
+	padding-top: 50px;
+}
+#list-all ul li
+{
+	font-weight: bold;
+}
+.list-all-subtypes
+{
+	display: none;
+	animation-name: slide-in;
+	animation-duration: 0.5s;
+}
+.list-all-subtypes li a
+{
+	color:#5f5f5f;
+}
+.list-all-subtypes li
+{
+	height: 100%;
+	border-left: 1px solid #27272b;
+	padding-left: 0;
+	padding: 10px;
+	margin-left: 20px;
+}
+.list-all-subtypes li a:hover
+{
+	background-color: #2c2c31;
+	color: #f8be3f;
+}
+#list-all ul .fa-th-large
+{
+	margin-right: 10px;
+}
+#list-all ul .fa-angle-right
+{
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 30px;
+}
+#list-all ul .dropdown-list:hover
+{
+	background-color: #3a3b44;
+	color: #f8be3f;
+	cursor: pointer;
+}
+.show{
+	display: block;
+}
+/* End of admin pannel */
+
+
+
+/* Css for the admin home page */
+.home-admin img{
+  width: 50%;
+  height: 550px;
+}
+.admin-text{
+  text-align: center;
+  font-size: 30px;
+  font-family: fantasy;
+}
+/* End */
+
+
+
+
+
+
+/* Css for the customers page card view  */
+/* Float four columns side by side */
+.cards {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+.cards_chef {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+.cards * {
+  box-sizing: border-box;
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+.fa-star{
+  font-size: 30px;
+}
+
+
+
+
+
+/* CSS for Rating */
+.rating{
+  width: 100%;
+  height: 200px;
+  padding-top: 100px;
+  position: relative;
+}
+.stars{
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+.checked{
+  color: orange;
+}
+.checking{
+  color: linear-gradient(to right, orange, black);
+}
+
+
+
+
+/* Css for login and Signup page*/
+.hold{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  background-color:  #e5f0fc;
+  box-shadow: 2px 2px #888888;
+}
+.hold a{
+  float: left;
+  margin-top: 10px;
+  
+}
+.hold a:hover{
+  text-decoration: none;
+  color: rgb(255, 157, 157);
+  font-size: large;
+  
+}
+.hold_s a{
+  margin-top: 10px;
+  
+}
+.hold_s{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  background-color:  #e5f0fc;
+  box-shadow: 2px 2px #888888;
+}
+.hold_s a:hover{
+  text-decoration: none;
+  color: rgb(255, 157, 157);
+  font-size: large;
+  
+}
+.padd_sign{
+  padding-top: 0px;
+}
+.padd_login{
+  padding-top: 200px;
+}
+.btn_login{
+  margin-left: 89.5%;
+}
+.sign_up_btn{
+  width: 100%;
+}
+.hold_s h2{
+  text-align: center;
+}
+.hold_s{
+  margin-top: 0px;
+}
+.alert_label{
+  font-size: 10px;
+  color: red;
+}
+.alert_label_pass{
+  color: green;
+  font-size: 10px;
+  display: none;
+}
+.cart_color{
+  font-size: 20px;
+  color: olivedrab;
+}
+.sign_up_login:hover{
+  text-decoration: none;
+  color: rgb(255, 157, 157);
+  font-size: large;
+}
+
+
+
+/* Cart PAge Css */
+.quantity_cart{
+  width: 30%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #888888;
+  text-align: center;
+  border-color: #000;
+}
+.copyright{
+  width: 100%;
+  height: 50px;
+  background-color: #27272b;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.box_invoice{
+  width: 100%;
+  border: 2px solid rgb(58, 80, 24);
+}
+
+.logout_chef:hover{
+  cursor:pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+
+
+/* employer profile back tracking btn */
+.back-css-class{
+  width:50px; 
+  height:50px;
+  position:absolute;
+  opacity: 50%;
+  border-radius: 25px;
+  left: 25px;
+  font-size: 25px;
+  border: none;
+  background-color: rgba(248, 194, 56, 0.944);
+}
+.back-css-class:hover{
+  opacity: 100%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+/* Manager top notifications */
+#sticky-right-controls
+{
+	width: calc(100% - 250px);
+	float: left;
+}
+.bell_notify{
+  color: #f8be3f;
+  font-size: 20px;
+}
+.no_noti{
+  color:red;
+  position:absolute;
+  font-size: 12px;
+  left: 3px;
+  font-weight: bold;
+}
+.d_d_noti{
+  font-size: 20px;
+}
+.d_d_noti:hover{
+  text-decoration: none;
+  color: #f8be3f;
+}
+.list_pointer{
+  cursor: pointer;
+}
+
+
+
+.home_cards{
+  background-color: rgb(202, 199, 199);
+  color:rgb(47, 37, 37);
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.home_cards:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  cursor: pointer;
+  background-color: rgb(122, 98, 98);
+  color: white;
+}
+
+.nav_hover:hover{
+  text-decoration: none;
+  font-size: 15px;
+  background-color: #dad8d8;
+}
